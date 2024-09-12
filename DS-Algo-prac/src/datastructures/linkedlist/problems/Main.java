@@ -9,11 +9,6 @@ public class Main {
         myList.append(3);
         myList.append(4);
         myList.append(5);
-        myList.append(6);
-        myList.append(7);
-        myList.append(8);
-        myList.append(9);
-
         LinkedList.Node middleNode = myList.findMiddleNode();
         System.out.println(middleNode.value); // Output: 3
 
