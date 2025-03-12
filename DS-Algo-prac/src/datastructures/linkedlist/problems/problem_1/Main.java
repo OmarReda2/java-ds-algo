@@ -1,6 +1,5 @@
-package datastructures.linkedlist.problems;
+package datastructures.linkedlist.problems.problem_1;
 
-import datastructures.linkedlist.problems.Problem_1.LinkedList;
 
 public class Main {
     public static void main(String[] args) {

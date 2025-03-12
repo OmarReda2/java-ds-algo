@@ -1,10 +1,6 @@
-package datastructures.linkedlist.problems;
+package datastructures.linkedlist.problems.problem_1;
 
-public class Problem_1 {
-
-
-
-    public static class LinkedList {
+    public class LinkedList {
 
         private Node head;
         private Node tail;
@@ -90,4 +86,4 @@ public class Problem_1 {
 
 
 
-}
+
