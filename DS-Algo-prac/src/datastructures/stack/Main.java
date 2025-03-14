@@ -26,7 +26,7 @@ public class Main {
         myStack.push(3);
         myStack.push(11);
 
-        myStack.pop();
+
 
         myStack.printStack();
     }
