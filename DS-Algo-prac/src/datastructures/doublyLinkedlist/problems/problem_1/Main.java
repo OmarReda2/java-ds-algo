@@ -1,4 +1,4 @@
-package datastructures.DoublyLinkedlist.problems.problem_1;
+package datastructures.doublyLinkedlist.problems.problem_1;
 
 public class Main {
 
