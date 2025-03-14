@@ -1,4 +1,4 @@
-package datastructures.stack;
+package datastructures.stack.impl;
 
 public class Stack {
 
