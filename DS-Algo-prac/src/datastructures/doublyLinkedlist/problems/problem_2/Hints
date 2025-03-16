@@ -1,0 +1,27 @@
+Pseudo Code:
+
+Initialize variables:
+
+Set currentNode to head.
+
+Set temporaryNode to null.
+
+Iterate through the list:
+
+While currentNode is not null, do the following:
+
+Set temporaryNode to currentNode.prev.
+
+Set currentNode.prev to currentNode.next.
+
+Set currentNode.next to temporaryNode.
+
+Set currentNode to currentNode.prev.
+
+Swap head and tail:
+
+Set temporaryNode to head.
+
+Set head to tail.
+
+Set tail to temporaryNode.
