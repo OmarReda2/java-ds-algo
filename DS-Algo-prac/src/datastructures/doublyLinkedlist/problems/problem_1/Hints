@@ -1,0 +1,15 @@
+Pseudo Code:
+
+Check if the length of the doubly linked list is less than 2. If it is, return, as there are no nodes to swap.
+
+If the length is 2 or more, proceed with swapping the values of the first and last nodes:
+
+Store the value of the head node in a temporary variable, temp.
+
+Set the value of the head node to the value of the tail node.
+
+Set the value of the tail node to the value stored in temp.
+
+
+
+This algorithm simply swaps the values of the first and last nodes of the doubly linked list. It does not involve updating any pointers or modifying the structure of the list.

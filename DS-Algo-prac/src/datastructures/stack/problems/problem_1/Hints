@@ -1,0 +1,5 @@
+Pseudo Code:
+
+Push value to the stack:
+
+Add the value to the end of the stackList.

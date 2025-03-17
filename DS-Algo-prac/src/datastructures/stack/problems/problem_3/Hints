@@ -1,0 +1,65 @@
+Pseudo Code:
+
+Initialize variables:
+
+Create an empty stack called stack.
+
+Create an empty string called reversedString.
+
+Iterate through the input string:
+
+For each character c in the input string, push c onto the stack.
+
+Build the reversed string:
+
+While the stack is not empty, do the following:
+
+Pop a character from the stack and concatenate it to reversedString.
+
+Return the reversed string.
+
+
+
+
+
+Put in Simpler Terms:
+
+
+
+Imagine you have a box of toy blocks. Each block has a letter on it, and you've lined them up in a certain order to spell a word.
+
+Now, this program is like a game where you take each block starting from the beginning of the word, and you place them in a bucket. But when you put blocks in the bucket, the first block you put in ends up at the bottom, and the last block you put in ends up at the top.
+
+After all blocks are in the bucket, you start taking them out. But the rules of the game say you can only take out the topmost block first. So, the block you put in last comes out first, and the block you put in first comes out last.
+
+Once you've taken out all the blocks, you have the original word, but the letters are now in reverse order! This is exactly what this code does, but instead of blocks, it's working with the letters in a text.
+
+
+
+
+
+Static Explanation:
+
+
+
+    public static String reverseString(String string) {
+    }
+
+
+In Java, a static method belongs to the class itself, rather than an instance of the class.  That means you can call a static method without creating an object of the class.
+
+In the case of reverseString, since we don't need to create an object of Main to use this method, we can declare it as static.  This means we can call reverseString directly from the main method, without having to create a Main object first.
+
+If reverseString was not declared as static, you would need to create an object of the Main class to use it.  For example:
+
+
+
+Main myMain = new Main();
+String reversedString = myMain.reverseString("hello");
+
+
+By declaring it as static, you can use it like this instead:
+
+
+
+String reversedString = reverseString("hello");
