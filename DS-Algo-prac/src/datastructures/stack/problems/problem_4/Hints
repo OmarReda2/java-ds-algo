@@ -1,0 +1,71 @@
+Pseudo Code:
+
+Initialize stack:
+
+Create an empty stack called stack.
+
+Process parentheses:
+
+For each character p in the input string:
+
+If p is '(', push p onto the stack.
+
+If p is ')' and stack is not empty and stack.peek() is '(', pop from the stack.
+
+If p is ')' and either stack is empty or stack.peek() is not '(', return false.
+
+Check stack status:
+
+Return true if the stack is empty, indicating balanced parentheses; otherwise, return false.
+
+
+
+
+
+Put in Simpler Terms:
+
+
+
+Think about this like a game of matching pairs.
+
+Imagine you're playing a game with cards where each card is either an opening bracket '(' or a closing bracket ')'. You have to make sure every opening bracket finds its closing pair, like a game of memory where you're matching pairs.
+
+To do this, you create a pile (like our Stack in the code) where you're going to keep the opening brackets. Here's the rule of the game:
+
+If you see an opening bracket, you put that card on the pile.
+
+If you see a closing bracket, you check your pile. If your pile is empty, something is wrong because you have a closing bracket with no opening pair, so you lose the game (the function returns false). If your pile isn't empty, you take the top card off the pile (like popping from the Stack) because you've found a matching pair of brackets.
+
+Once you've gone through all your cards, if you still have cards in your pile, something's wrong because you have some opening brackets without closing pairs, so again, you lose (the function returns false). If your pile is empty, that means every opening bracket had a matching closing bracket and you win the game (the function returns true).
+
+That's what this code does: it's playing a matching game with brackets in a string to make sure every opening bracket has a matching closing bracket.
+
+
+
+
+
+Static Explanation:
+
+
+
+    public static boolean isBalancedParentheses(String parentheses) {
+    }
+
+
+In Java, a static method belongs to the class itself, rather than an instance of the class.  That means you can call a static method without creating an object of the class.
+
+In the case of isBalancedParentheses, since we don't need to create an object of Main to use this method, we can declare it as static.  This means we can call isBalancedParentheses directly from the main method, without having to create a Main object first.
+
+If isBalancedParentheses was not declared as static, you would need to create an object of the Main class to use it.  For example:
+
+
+
+Main bp = new Main();
+boolean areTheyBalanced = bp.isBalancedParentheses("()()()");
+
+
+By declaring it as static, you can use it like this instead:
+
+
+
+boolean areTheyBalanced = isBalancedParentheses("()()()");
