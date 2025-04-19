@@ -1,4 +1,4 @@
-package datastructures.stack.problems.problem_3;
+package datastructures.stack_and_queue.problems.problem_3;
 
 import java.util.ArrayList;
 

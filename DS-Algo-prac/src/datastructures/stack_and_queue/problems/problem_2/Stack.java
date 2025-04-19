@@ -1,4 +1,4 @@
-package datastructures.stack.problems.problem_1;
+package datastructures.stack_and_queue.problems.problem_2;
 
 import java.util.ArrayList;
 
@@ -32,9 +32,14 @@ public class Stack<T> {
         return stackList.size();
     }
 
-    // WRITE PUSH METHOD HERE //
-    public void push(T ele){
-        stackList.add(ele);
+    public void push(T value) {
+        stackList.add(value);
+    }
+
+    // WRITE POP METHOD HERE //
+    public T pop(){
+        if(stackList.isEmpty()) return null;
+        return stackList.remove(stackList.size()-1);
     }
 
 }

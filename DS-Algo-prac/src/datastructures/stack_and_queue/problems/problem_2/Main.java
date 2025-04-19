@@ -1,4 +1,4 @@
-package datastructures.stack.problems.problem_2;
+package datastructures.stack_and_queue.problems.problem_2;
 
 public class Main {
 

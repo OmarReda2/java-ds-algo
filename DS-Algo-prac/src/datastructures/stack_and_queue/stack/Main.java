@@ -1,4 +1,4 @@
-package datastructures.stack.impl;
+package datastructures.stack_and_queue.stack;
 
 
 public class Main {
