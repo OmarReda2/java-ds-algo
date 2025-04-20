@@ -1,0 +1,57 @@
+Pseudo Code:
+
+Initialize the function:
+
+Check if the queue is empty:
+
+If isEmpty() returns true, return null.
+
+Otherwise, return the top element of stack1 by popping it.
+
+
+
+
+
+Step-by-Step Process
+
+Using the queue from above [1, 2, 3, 4] (front of queue is 1, stack1: [1, 2, 3, 4], top is 1):
+
+Check if empty:
+
+stack1 is not empty, so proceed.
+
+Pop from stack1:
+
+Pop the top element (1) from stack1.
+
+Return 1.
+
+Now: stack1: [2, 3, 4] (top is 2), stack2: [].
+
+Queue is now [2, 3, 4] (front is 2).
+
+
+
+🎨 Visual Representation:
+
+
+
+Diagram 1: Before dequeue
+
+Queue: [1, 2, 3, 4] (front: 1, back: 4)
+stack1:        stack2:
+  1  <- top    (empty)
+  2
+  3
+  4
+
+
+Diagram 2: After dequeue
+
+Queue: [2, 3, 4] (front: 2, back: 4)
+stack1:        stack2:
+  2  <- top    (empty)
+  3
+  4
+
+==> 1 popped and returned
